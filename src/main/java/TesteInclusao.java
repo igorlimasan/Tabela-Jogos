@@ -3,7 +3,7 @@ import model.TimeDAO;
 
 public class TesteInclusao {
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Long l;
 		TimeDAO timeDAO = new TimeDAO();
 		Time time = new Time();
@@ -13,6 +13,6 @@ public class TesteInclusao {
 		
 		System.out.println(timeDAO.buscarTimePorId(l).getNome());
 
-	}
+	}*/
 
 }
