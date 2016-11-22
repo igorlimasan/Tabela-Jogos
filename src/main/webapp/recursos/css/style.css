@@ -1,0 +1,373 @@
+/* RESETS */
+a:link {text-decoration: none; color: #464646; }
+a:active {text-decoration: none; color: #464646; }
+a:visited {text-decoration: none; color: #464646; }
+a:hover {text-decoration: none; color: #f55064; }
+
+/* PADROES
+-------------------------------------------------------------------*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.mwl-5 {
+	margin-left: 5px;
+}
+.m-10 {
+	margin: 10px;
+}
+.m-15 {
+	margin: 15px;
+}
+.m-25 {
+	margin: 25px;
+}
+.mb-25 {
+	margin-bottom: 25px;
+}
+.no-border {
+	border: none !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+.no-padding {
+	padding: 0 !important;
+}
+.cursor {
+	cursor: pointer !important;
+}
+.not-cursor {
+	cursor: not-allowed !important;
+}
+.w-auto {
+	width: auto !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.border-right {
+	border-right: 1px solid #e7e7e7;	
+}
+
+/* CORES 
+-------------------------------------------------------------------*/
+.bg-blue {
+	background: #4678e1;
+}
+.bg-green {
+	background: #64be3c;
+}
+.bg-yellow {
+	background: #ffbe0f;
+}
+.bg-red {
+	background: #e60019;
+}
+
+.bg-blue-light {
+	background: #e1f5f5;
+}
+.bg-green-light {
+	background: #ebffe1;
+}
+.bg-yellow-light {
+	background: #ffffe1;
+}
+.bg-red-light {
+	background: #ffdcdc;
+}
+
+.bg-gray1 {
+	background: #5a5a5a;
+}
+.bg-gray2 {
+	background: #aaaaaa;
+}
+.bg-gray3 {
+	background: #f5f5f5;
+}
+
+.text-light-blue {
+	color: #3cc8e6;
+}
+.text-blue {
+	color: #4678e1;
+}
+.text-green {
+	color: #64be3c;
+}
+.text-yellow {
+	color: #ffbe0f;
+}
+.text-red {
+	color: #e60019;
+}
+.text-gray1 {
+	color: #5a5a5a;
+}
+.text-gray2 {
+	color: #aaaaaa;
+}
+.text-gray3 {
+	color: #f5f5f5;
+}
+
+/* CONTE�DO
+-------------------------------------------------------------------*/
+.form {
+    background: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+section {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.tableFixed
+{
+	float: left;
+	margin-top: 7px;
+	width: 95%;
+}
+
+.tableFixed th, .tableFixed td
+{
+	padding-left: 10px;
+}
+
+.content-left {
+	float: left;
+	width: 30%;
+}
+
+.newTable
+{
+	margin: 30px auto;
+    width: 100%;
+}
+
+.newTable tr
+{
+	background: #e7ecef;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+.newTable td, .newTable th
+{
+	padding: 10px;
+}
+
+.content-right {
+	float: left;
+	width: 40%;
+}
+
+button {
+	padding: 4px 7px;
+	margin: 7px;
+}
+
+.notmuch{
+	width: 60% !important;
+}
+
+#cadastroBtn, #cleanBtn
+{
+	height: 35px;
+	border: 0px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+#cadastroBtn
+{
+	background: #3877da;
+	color: white;
+}
+#cleanBtn
+{
+	background: #61b14e;
+	color: white;
+}
+
+.listed p
+{
+	position: absolute;
+	margin-top: 7px;
+}
+
+.listed .usuario
+{
+	margin-left: 50px;
+}
+
+.buttonP
+{
+	float: right !important;
+    position: relative !important;
+    margin-right: 5px !important;
+    margin-top: 5px !important;
+}
+
+.buttonP button
+{
+	height: 25px;
+    width: 25px;
+    background-image: url(lixeira1.png);
+    border: 0px;
+    background-color: transparent;
+}
+
+.buttonP button:hover
+{
+	height: 25px;
+    width: 25px;
+    background-image: url(lixeira2.png);
+    border: 0px;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.actions{
+	float: right;
+	margin-top: 3px;
+}
+
+/* MENUS
+-------------------------------------------------------------------*/
+header {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+nav {
+    display: block;
+    padding: 15px;
+    background: #ededed;
+}
+
+
+/* SIDEBAR
+-------------------------------------------------------------------*/
+
+
+/* FORMULARIOS
+-------------------------------------------------------------------*/
+.form {
+	width: 100%;
+}
+
+.form form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+input, input[type="search"] {
+	background: #ffffff;
+	border: 1px solid #969696;
+	border-radius: 3px;
+	box-shadow: none;
+	margin: 7px 0;
+	padding: 7px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	width: 100%;
+}
+
+input[type="search"] {
+	width: 100%;
+	font-size: 12px;
+	
+}
+
+
+select {
+	background: #FFFFFF;
+	border: 1px solid #e01e46;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+ input{
+	outline: none;
+}
+.input-normal:focus {
+    border-color: #66afe9 !important;
+    outline: 0 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+}
+input:focus:invalid, input[value=""]:invalid:focus {
+	border-color: #B62323;
+  	-webkit-box-shadow: rgba(215, 23, 23, 0.5) 0 0px 9px;
+  	box-shadow: rgba(215, 23, 23, 0.5) 0 0px 9px;
+}
+input:focus:valid {
+	border-color: #23B668;
+  	-webkit-box-shadow: rgba(23, 215, 84, 0.5) 0 0px 9px;
+  	box-shadow: rgba(23, 215, 84, 0.5) 0 0px 9px;
+}
+
+/* BOTOES
+-------------------------------------------------------------------*/
+.btn {
+	margin: 15px 0;
+}
+
+
+.btn-sair {
+	position: absolute;
+    right: 7px;
+    top: 7px;
+}
+/* RODAPE
+-------------------------------------------------------------------*/
+
+
+/* RESPONSIVO
+-------------------------------------------------------------------*/
+
+/* Tela de no máximo 1336 pixels de largura */
+@media screen and (max-width: 1336px) {
+	
+}
+
+/* Tela de no máximo 1280 pixels de largura */
+@media screen and (max-width: 1280px) {
+
+}
+
+/* Tela de no máximo 1024 pixels de largura */
+@media screen and (max-width: 1024px) {
+	.mobile-1024 {
+		display: none;
+	}
+}
+
+/* Tela de no máximo 768 pixels de largura */
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+/* Tela de no máximo 640 pixels de largura */
+@media screen and (max-width: 640px) {
+
+}
+
+/* Tela de no máximo 400 pixels de largura */
+@media screen and (max-width: 400px) {
+
+}
