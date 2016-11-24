@@ -1,17 +1,20 @@
+package control;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.taglibs.standard.lang.jstl.ArraySuffix;
 
 import model.Time;
 import model.TimeDAO;
 
 public class RoundRobinTournament {
-	public List<String[][]> tournament(StringBuilder nomeTimes) {
+	public String[][] tournament(StringBuilder nomeTimes) {
 		String res1="";
-		List<String[][]> res = new LinkedList<String[][]>();
+		String[][] res;
 		
 		 
 		if(nomeTimes.toString().trim().split("\\s+").length%2 == 1){
@@ -20,6 +23,7 @@ public class RoundRobinTournament {
 			
 		}
 		String[] times = nomeTimes.toString().trim().split("\\s+");	
+		System.out.println(Arrays.toString(times));
 		
 		
 		String[][] escala = new String[times.length/2][times.length/2];
@@ -29,7 +33,10 @@ public class RoundRobinTournament {
 		escala[1] = reverseAll(escala[1]);
 		System.out.println("Rodada 1");
 		formatarJogos(escala[0], escala[1]);
-		res.add(escala);
+		res = new String[times.length-1][times.length];
+		res[0] = ArrayUtils.addAll(escala[0], escala[1]);
+		System.out.println("Concat array "+Arrays.toString(res));
+		
 		System.out.println("\n");
 		String[] auxArray = Arrays.copyOfRange(times, 1, times.length);
 		String aux="";
@@ -44,8 +51,10 @@ public class RoundRobinTournament {
 			escala[0][0] = res1;
 			escala[0] = completeArray(escala[0],Arrays.copyOfRange(auxArray, 0, (times.length/2)-1),times.length/2);
 			escala[1] = reverseAll(Arrays.copyOfRange(auxArray, 3, auxArray.length));
+			res[i+1] = ArrayUtils.addAll(escala[0], escala[1]);
+			System.out.println(Arrays.toString(res));
 			formatarJogos(escala[0], escala[1]);
-			res.add(escala);
+			
 			
 		}
 		

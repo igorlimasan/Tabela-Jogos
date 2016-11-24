@@ -1,7 +1,10 @@
 package model;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 
 public class TimeDAO {
 	ConectionFactory conectionFactory = new ConectionFactory();
@@ -44,6 +47,27 @@ public class TimeDAO {
 		manager.close();
 		
 		return time;
+		
+	}
+	
+	public List<Time> todosTimes(){
+		manager = conectionFactory.getEntityManager();
+		manager.getTransaction().begin();
+		TypedQuery<Time> query = manager.createQuery("from Time t",Time.class);
+		return query.getResultList();
+	}
+	
+	public StringBuilder nomesTimes (){
+		StringBuilder sb = new StringBuilder();
+		List<Time> times = todosTimes();
+		for (Time t : times){
+			System.out.println(t.getNome());
+			sb.append(t.getNome());
+			sb.append(" ");
+		}
+		System.out.println("Times totais "+sb.toString());
+		return sb;
+		
 		
 	}
 
